@@ -40,7 +40,7 @@ sqrt(25)  # 5, square root of 25
 min(1, 6/8, 4/3)  # 0.75, (6/8 is the smallest value)
 ```
 
-  - _Note:_ To keep functions and variables distinct, I try to always include empty parentheses `()` when referring to a function name. This does not mean that the function takes no arguments, it is just a useful shorthand for indicating that something is a function.
+  - _Note:_ To keep functions and variables distinct, I try to always include empty parentheses `()` when referring to a function name. This does not mean that the function takes no parameters, it is just a useful shorthand for indicating that something is a function.
 
 If you call any of these functions interactively, R will display the **returned value** (the output) in the console. However, the computer is not able to "read" what is written out in the console&mdash;that's for humans to view! If we want the computer to be able to _use_ a returned value, we will need to give that value a name so that the computer can refer to it. That is, we need to store the returned value in a variable:
 
@@ -54,7 +54,7 @@ min.is.big <- smallest.number > 1  # FALSE
 # we can also use functions directly when storing to variables
 phi <- .5 + sqrt(5)/2  # 1.618...
 
-# we can even pass the result of a function as an argument to another!
+# we can even pass the result of a function as a parameter to another!
 # watch out for where the parentheses close!
 print(min(1.5, sqrt(3)))  # prints 1.5
 ```
@@ -65,7 +65,7 @@ As you may have noticed, R comes with a large number of functions that are built
 | Function Name | Description | Example |
 | --- | --- |  --- |
 | `sum(a,b,...)`  | Calculates the sum of all input values  | `sum(1, 5)` returns `6`|
-| `round(x,digits)` | Rounds the first argument to the given number of digits | `round(3.1415, 3)` returns `3.142` |
+| `round(x,digits)` | Rounds the first parameter to the given number of digts | `round(3.1415, 3)` returns `3.142` |
 | `toupper(str)`  | Returns the characters in lowercase  | `toupper("hi there")` returns `"HI THERE"` |
 | `paste(a,b,...)` | _Concatenate_ (combine) characters into one value | `paste("hi", "there")` returns `"hi there"` |
 | `nchar(str)` | Counts the number of characters in a string | `nchar("hi there")` returns `8` (space is a character!) |
@@ -105,8 +105,8 @@ Functions are named like any othe variable, so we use the _assignment operator_ 
 The best way to understand the syntax for defining a function is to look at an example:
 
 ```r
-# A function named `MakeFullName` that takes two arguments
-# and returns the "full name" made from them
+# A function named `AddNumbers` that takes two arguments
+# and returns the sum of those arguments
 MakeFullName <- function(first.name, last.name) {
   # Function body: perform tasks in here
   full.name <- paste(first.name, last.name)
@@ -115,7 +115,7 @@ MakeFullName <- function(first.name, last.name) {
   return(full.name)
 }
 
-# Call the MakeFullName function with the values "Alice" and "Kim"
+# Call the AddNumbers function with the values 2 and 10
 my.name <- MakeFullName("Alice","Kim")  # "Alice Kim"
 ```
 
