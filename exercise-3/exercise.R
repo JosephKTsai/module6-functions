@@ -1,4 +1,4 @@
-# Exercise-3: Calling built-in functions
+## Exercise-3: Calling built-in functions
 
 # Create a variable `my.name` that contains your name
 
@@ -45,7 +45,7 @@ round.sum <- round(raw.sum, 1) #the number represents the number of decimal plac
 # to 1 decimal place
 
 round.1 <- (round(fav.1,1))
-round.2 <-(round(fav.2,1))
+round.2 <- (round(fav.2,1))
 
 # Create a variable `sum.round` that is the sum of the rounded values
 
