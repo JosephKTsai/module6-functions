@@ -7,6 +7,9 @@
 CompareLength <- function(character.string.1, character.string.2) {
 	length.string.1 <- nchar(character.string.1)
 	length.string.2 <- nchar(character.string.2)
+	
+	# Take the absolute value in the case that the second character string is longer
+	# than the first
 	length.difference <- abs(length.string.1 - length.string.2)
 	return(paste("The difference in length is", length.difference))
 }
