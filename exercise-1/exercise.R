@@ -7,7 +7,6 @@ AddThree <- function(given.number) {
 	return(given.number + 3)
 }
 
-
 # Create a variable `ten` that is the result of passing 7 to your `AddThree` function
 
 ten <- AddThree(7)

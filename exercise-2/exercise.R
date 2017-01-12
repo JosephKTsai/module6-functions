@@ -7,8 +7,8 @@
 CompareLength <- function(character.string.1, character.string.2) {
 	length.string.1 <- nchar(character.string.1)
 	length.string.2 <- nchar(character.string.2)
-	length.difference <- (length.string.1 - length.string.2)
-	return(paste("The difference in length is", "length.difference"))
+	length.difference <- abs(length.string.1 - length.string.2)
+	return(paste("The difference in length is", length.difference))
 }
 
 
